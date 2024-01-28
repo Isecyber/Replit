@@ -1,0 +1,21 @@
+print("Genration Identifier")
+print()
+birth = int(input("What's your birth year? "))
+print()
+birthT = range(1925, 1946)
+birthBB = range(1947, 1964)
+birthX = range(1965, 1981)
+birthM = range(1982, 1995)
+birthZ = range(1996, 2015)
+if birth in birthT:
+  print("Old cargo, Your are a Traditionalist")
+elif birth in birthBB:
+  print("Your are of the Baby Boomers Generation")
+elif birth in birthX:
+  print("Your are of the Generation X")
+elif birth in birthM:
+  print("Your are of the Millenials Generation")
+elif birth in birthZ:
+  print("The new wave, Your are of the Generation Z")
+else:
+  print("Dude, are you an alien?")
