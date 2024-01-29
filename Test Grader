@@ -1,0 +1,26 @@
+print("TEST GRADE CALCULAROR FOR MY STUDENTS")
+print("--------------------------------")
+print()
+testName = input("What is the name of the test? ")
+print()
+maxScore = int(input("What is the maximum score you can receive? "))
+print()
+yourScore = float(input("What score did you receive? "))
+print()
+testscore = float(yourScore / maxScore)
+testpercent = testscore * 100
+finalresult = round(testpercent, 2)
+if finalresult >= 90:
+  print("You got", finalresult, "%, which is an A+")
+elif finalresult >= 80:
+  print("You got", finalresult, "%, which is an A")
+elif finalresult >= 70:
+  print("You got", finalresult, "%, which is a B")
+elif finalresult >= 60:
+  print("You got", finalresult, "%, which is a C")
+elif finalresult >= 50:
+  print("You got", finalresult, "%, which is a D")
+elif finalresult <= 49:
+  print("You got", finalresult, "%, which is a U")
+else:
+  print("Get your score from heaven!")
