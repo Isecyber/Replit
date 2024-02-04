@@ -1,0 +1,24 @@
+print("Guess The Number Game")
+print("**********************\n")
+print()
+print("Guess a number between 1 and 1,000,000 and I will tell you if you are too low, too high, or get it correct.")
+print()
+print("Let's play!")
+numbers = 1500
+guesses = 1
+while True:
+  number = int(input("Enter a number between 0 and 1,000,000: "))
+  print()
+  if number < 0:
+    print("This isn't in the avaliable range")
+    exit()
+  elif number < numbers:
+    print("Too low")
+    guesses += 1
+  elif number > numbers:
+    print("Too high")
+    guesses += 1
+  elif (number == numbers):
+    print ("You are the winner!", "It took you", guesses, "guesses to get it correct!")
+    break
+    
