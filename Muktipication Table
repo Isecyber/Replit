@@ -1,0 +1,24 @@
+print("Multiplication Challenge")
+print()
+print("How well do you know your multiplication tables?")
+print()
+# Ask user for multiplication table
+mul= int(input("Name your multiplication table: "))
+print()
+# Set score to 0
+score = 0
+# Set loop to 10
+for i in range(1,11):
+  # Ask user for multiplication
+  print(i,"x",mul,"=")
+  ans= int(input())
+  # Check if answer is correct
+  if ans == i*mul:
+    print("Correct!")
+    score += 1
+  else:
+    print("Incorrect. The answer is",i*mul)
+if score == 10:
+  print("Wow! A perfect score! 🥳")
+else:
+  print("You got", score, "out of 10 correct.")
