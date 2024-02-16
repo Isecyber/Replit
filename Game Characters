@@ -1,0 +1,38 @@
+import os, time, random
+
+print("GAME CHARACTER BUILDER")
+print()
+def character():
+  name = input("Name your Legend: ")
+  print()
+  type = input("Character Type (Human, Elf, Wizard, Orc): ")
+  print()
+  return name, type
+def health():
+  h1 = random.randint(1,6)
+  h2= random.randint(1,12)
+  health = (h1 * h2)/2 + 10
+  return health
+def strength():
+  s1 = random.randint(1,6)
+  s2 = random.randint(1,12)
+  strength = (s1 * s2)/2 + 12 
+  return strength
+while True:
+  name, type = character()
+  print()
+  print(name)
+  print("HEALTH: ", health())
+  print("STRENGTH: ", strength())
+  print()
+  print("May your name go down in Legend...")
+  print()
+  again = input("Again?: ")
+  if again == "yes":
+    time.sleep(2)
+    os.system("clear")
+    continue
+  elif again == "no" or again == "No":
+    exit()
+  else:
+    break
