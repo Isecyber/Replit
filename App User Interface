@@ -1,0 +1,39 @@
+import emoji
+
+def newPrint(color, word):
+  if color=="red":
+    print("\033[31m", word, sep="", end="") 
+  elif color=="green":
+    print("\033[32m", word, sep="", end="")
+  elif color=="blue":
+    print("\033[34m", word, sep="", end="")
+  elif color=="yellow":
+    print("\033[33m", word, sep="", end="")
+  elif color == "purple":
+    print("\033[35m", word, sep="", end="")
+  else:
+    print("\033[0m", word, sep="", end="")
+
+newPrint("red", "=") 
+newPrint("reset", "=")
+newPrint("blue", "= ") 
+newPrint("yellow", "Music App")
+newPrint("blue", " =")
+newPrint("reset", "=")
+newPrint("red", "=") 
+print()
+print()
+radio = "Radio Gaga"
+queen = "Queen"
+print(emoji.emojize(":fire::radio: \t"))
+newPrint("reset", f"{radio:^25} \n")
+newPrint("blue",f"{queen:^20}")
+print()
+print()
+prev = "PREV"
+next = "NEXT"
+pause = "PAUSE"
+newPrint("reset", f"{prev:<35} \n")
+newPrint("green", f"{next:^35} \n")
+newPrint("red", f"{pause:>35} \n")
+
