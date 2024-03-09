@@ -1,0 +1,4 @@
+import random
+greetings = ["Salut", "Privet", "	Nǐ hǎo", "Ciao", "Yā, Yō", "Ahlan","Yassas", "Hei", "Shalom", "Olá"]
+test = random.randint(0,9)
+print(f"{greetings[test]}")
