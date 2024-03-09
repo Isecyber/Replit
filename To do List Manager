@@ -1,0 +1,28 @@
+import os, time
+
+print("""TO DO LIST MANAGER""")
+print()
+
+myTodoList = []
+
+def printList():
+  print() 
+  for item in myTodoList:
+    print(item)
+    print() 
+
+while True:
+  menu = input(" Do you want to add, view, or edit your TO-do List?: ")
+  if menu =="view" or "View":
+    printList()
+  elif menu == "add" or "Add":
+    item = input("Please Type in What you Want to Add Your List?:")
+    myTodoList.append(item)
+  elif menu == "edit" or "Edit":
+    item = input("What are you editing from Your List?: ")
+    if item in myTodoList:
+      myTodoList.remove(item)
+    else:
+      print(f"{item} was not in the list")
+      exit()
+  printList()
